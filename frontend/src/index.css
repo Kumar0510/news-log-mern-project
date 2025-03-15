@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgb(230, 245, 255);
+    width : 100vw;
+    overflow-x: hidden;
+    font-family: "Montserrat";
+}
+
+.animatedButton{
+    animation-duration: 10000ms;
+}
+
+.ql-toolbar{
+    border: none !important;
+}
+
+.ql-container{
+    border: none !important;
+}
+.ql-editor{
+    border: none !important;
+}
