@@ -9,10 +9,10 @@ import webHookRouter from './routes/webhook.route.js'
 import {clerkMiddleware} from '@clerk/express'
 
 const corsOptions = {
-  origin: 'https://newslog.vercel.app',
+  origin: '*',
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(clerkMiddleware())
 app.use("/webhooks", webHookRouter);
 
