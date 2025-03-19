@@ -12,7 +12,7 @@ const corsOptions = {
   origin: 'https://newslog.vercel.app',
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(clerkMiddleware())
 app.use("/webhooks", webHookRouter);
 
