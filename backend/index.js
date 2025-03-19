@@ -7,8 +7,14 @@ import postRouter from "./routes/post.route.js";
 import commentRouter from "./routes/comment.route.js";
 import webHookRouter from './routes/webhook.route.js'
 import {clerkMiddleware} from '@clerk/express'
+import dotenv from 'dotenv'
 
-app.use(cors());
+dotenv.config();
+const corsOptions = {
+  origin: '*',
+};
+
+app.use(cors(corsOptions));
 app.use(clerkMiddleware())
 app.use("/webhooks", webHookRouter);
 
