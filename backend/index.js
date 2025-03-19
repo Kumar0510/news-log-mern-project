@@ -8,7 +8,11 @@ import commentRouter from "./routes/comment.route.js";
 import webHookRouter from './routes/webhook.route.js'
 import {clerkMiddleware} from '@clerk/express'
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://newslog.vercel.app',
+};
+
+app.use(cors(corsOptions));
 app.use(clerkMiddleware())
 app.use("/webhooks", webHookRouter);
 
