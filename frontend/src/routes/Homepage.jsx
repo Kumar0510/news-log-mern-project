@@ -19,6 +19,7 @@ function Homepage() {
         {/* titles */}
         <div className="">
           <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
+
           Bridging Ideas and Information: A Platform for Engaging Journalism
           </h1>
           <p className="mt-8 text-md md:text-xl">
