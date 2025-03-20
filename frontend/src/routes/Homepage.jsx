@@ -23,8 +23,7 @@ function Homepage() {
           Bridging Ideas and Information: A Platform for Engaging Journalism
           </h1>
           <p className="mt-8 text-md md:text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            rerum accusantium.
+            
           </p>
         </div>
         {/* animated button */}
